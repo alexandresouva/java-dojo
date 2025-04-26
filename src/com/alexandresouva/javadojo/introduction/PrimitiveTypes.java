@@ -23,11 +23,14 @@ public class PrimitiveTypes {
         // ------------------------------------//
         // 🚨CASTING: convert one type to another
 
-        // Implicit casting (automatic) — Java automatically converts smaller types to larger types.
+
+        // Widening Casting (implicit casting, automatic)
+        // Java automatically converts smaller types to larger types.
         int myInt = 10;
         long myLong = myInt;  // 'myInt' is automatically converted to 'long' (implicit casting)
 
-        // Explicit casting (manual) — The programmer needs to ask for the conversion, which can result in data loss.
+        // Narrowing Casting (explicit casting, manual)
+        // The programmer needs to ask for the conversion, which can result in data loss.
         double myDouble = 9.78;
         int myIntCast = (int) myDouble;  // Explicit conversion from 'double' to 'int', losing the decimal part
     }
