@@ -23,7 +23,6 @@ public class PrimitiveTypes {
         // ------------------------------------//
         // 🚨CASTING: convert one type to another
 
-
         // Widening Casting (implicit casting, automatic)
         // Java automatically converts smaller types to larger types.
         int myInt = 10;
