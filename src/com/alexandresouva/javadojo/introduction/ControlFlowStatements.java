@@ -42,6 +42,14 @@ public class ControlFlowStatements {
             System.out.println("For loop iteration: " + i);
         }
 
+        // ✅ FOREACH
+        System.out.println("FOREACH");
+        // It's not possible to get the index of the array
+        int[] numbers = {20, 22, 19, 25};
+        for (int num : numbers) {
+            System.out.println(num);
+        }
+
         // ------------------------------------//
         // ✅ WHILE
         System.out.println("WHILE");
