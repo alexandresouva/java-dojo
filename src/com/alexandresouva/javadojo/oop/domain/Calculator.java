@@ -13,8 +13,12 @@ public class Calculator {
     }
 
     // Multiply method: returns result (int)
-    public int multiply(int num1, int num2) {
-        return num1 * num2;
+    public int multiply(int... numbers) {
+        int total = 0;
+        for (int num : numbers) {
+            total += num;
+        };
+        return total;
     }
 
     // ------------------------------------//
@@ -37,6 +41,11 @@ public class Calculator {
     //   - Some classes (like String) are immutable:
     //     - A new object is created when modified (e.g., String concatenation).
     //   - Other objects can be mutable (e.g., ArrayList, custom classes).
+
+    // - Varargs (Variable Arguments):
+    //   - Allows passing zero or more arguments of the same type.
+    //   - Internally treated as an array.
+    //   - Only one varargs is allowed per method, and it must be the last parameter.
 
     // - Method design tip:
     //   - If method has more than 3 params, consider refactoring.
