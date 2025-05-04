@@ -26,38 +26,6 @@ public class Anime {
         System.out.println("Genre: " + this.genre );
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getEpisodes() {
-        return episodes;
-    }
-
-    public void setEpisodes(int episodes) {
-        this.episodes = episodes;
-    }
-
-    public double getRating() {
-        return rating;
-    }
-
-    public void setRating(double rating) {
-        this.rating = rating;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
     // ------------------------------------//
     // 🚩 Important notes:
 
@@ -76,5 +44,4 @@ public class Anime {
     //   Calls another constructor in the same class.
     //   Must be the *first* statement in the constructor.
     //   Only works inside constructors.
-
 }
