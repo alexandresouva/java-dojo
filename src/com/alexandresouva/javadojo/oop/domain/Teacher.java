@@ -36,6 +36,16 @@ public class Teacher extends Person {
     //     • Use @Override annotation to indicate overriding.
 
     // - Execution order:
-    //   1) Superclass (Person) constructor executes first.
-    //   2) Then subclass (Teacher) constructor runs.
+    //   1) Static initialization block(s) run for the superclass.
+    //   2) Static initialization block(s) run for the subclass.
+    //   -- Superclass
+    //   3) Memory is allocated for the object (fields get default values).
+    //   4) Instance variable initialization (fields get default values or assigned values).
+    //   5) Instance initialization block (runs every time an object is created).
+    //   6) Constructor runs.
+    //   -- Subclass
+    //   7) Memory is allocated for the object (fields get default values).
+    //   8) Instance variable initialization (fields get default values or assigned values).
+    //   9) Instance initialization block (runs every time an object is created).
+    //   10) Constructor runs.
 }

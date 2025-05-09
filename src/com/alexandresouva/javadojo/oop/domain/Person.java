@@ -36,4 +36,7 @@ public class Person {
 
     // - Multiple inheritance:
     //   Not supported in Java (a class can only extend one class).
+
+    // - Object
+    //   Every class in Java implicitly extends Object
 }
