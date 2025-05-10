@@ -4,15 +4,21 @@ public class Teacher extends Person {
     private String subject;
 
     public Teacher(String name, int age, String subject) {
-        super(name, age); // calls the constructor of the superclass (Person)
-        System.out.println("Professor constructor running...");
+        super(name, age);
         this.subject = subject;
     }
 
     @Override
     public void printDetails() {
-        super.printDetails(); // calls the method from the superclass
+        super.printDetails();
         System.out.println("Subject: " + this.subject);
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "subject='" + subject + '\'' +
+                '}';
     }
 
     public String getSubject() {
@@ -48,4 +54,9 @@ public class Teacher extends Person {
     //   8) Instance variable initialization (fields get default values or assigned values).
     //   9) Instance initialization block (runs every time an object is created).
     //   10) Constructor runs.
+
+    // - toString():
+    //   Used to provide a string representation of the object.
+    //   Commonly overridden to include relevant fields for debugging and logging.
+    //   When printing an object, toString() is called implicitly.
 }
