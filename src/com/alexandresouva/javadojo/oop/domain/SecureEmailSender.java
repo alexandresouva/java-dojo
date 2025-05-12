@@ -1,6 +1,11 @@
 package com.alexandresouva.javadojo.oop.domain;
 
 public final class SecureEmailSender extends EmailSender {
+    public SecureEmailSender() {
+        super();
+        this.notificationType = NotificationType.SECURE_EMAIL;
+    }
+
     @Override
     public void send(String recipient, String message) {
         System.out.println("Sending **SECURE EMAIL** to " + recipient + " with encryption: " + message);

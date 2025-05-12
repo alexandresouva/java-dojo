@@ -5,9 +5,11 @@ public class NotificationSender {
 
     private final int SENDER_ID;
     private boolean connected = false;
+    protected NotificationType notificationType;
 
     public NotificationSender() {
         this.SENDER_ID = ++count;
+        this.notificationType = NotificationType.GENERIC;
     }
 
     public final void connect() {
@@ -36,8 +38,8 @@ public class NotificationSender {
     public void printDetails() {
         System.out.println("Notification sender ID: " + this.SENDER_ID);
         System.out.println("Connected: " + this.connected);
+        System.out.println("Notification type: " + this.notificationType);
     }
-
     // ------------------------------------//
     // 🚩 Important notes:
 
